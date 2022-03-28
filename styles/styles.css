@@ -1,0 +1,53 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main-content";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: beige;
+  padding: 1rem;
+}
+
+.sidebar-title {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.sidebar-options {
+  display: grid;
+  justify-items: center;
+}
+
+.sidebar-settings {
+  display: grid;
+  justify-items: center;
+}
+
+ul > li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.header {
+  grid-area: header;
+  background-color: cadetblue;
+}
+
+.main-content {
+  grid-area: main-content;
+  background-color: darkgoldenrod;
+}
