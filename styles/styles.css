@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Indie Flower", cursive;
 }
 
 .container {
@@ -8,7 +9,7 @@ body {
   height: 100vh;
   background-color: grey;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 3fr;
   grid-template-areas:
     "sidebar header"
@@ -17,24 +18,42 @@ body {
 
 .sidebar {
   grid-area: sidebar;
-  background-color: beige;
+  background-color: #9ca3af;
+  height: 100vh;
   padding: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 2fr 6fr;
+  justify-items: start;
 }
 
 .sidebar-title {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  grid-template-columns: 1fr 3fr;
+  font-size: 2.2rem;
+}
+
+.sidebar-title div {
+  align-content: flex-start;
+  justify-self: start;
+}
+
+.sidebar-title img {
+  align-content: flex-start;
+  justify-self: end;
+  margin: 0.2rem;
 }
 
 .sidebar-options {
   display: grid;
   justify-items: center;
+  font-size: 1.5rem;
+  gap: 0.2rem;
 }
 
 .sidebar-settings {
   display: grid;
   justify-items: center;
+  font-size: 1.5rem;
 }
 
 ul > li {
@@ -42,12 +61,24 @@ ul > li {
   cursor: pointer;
 }
 
+li > img {
+  margin-right: 1rem;
+  padding: 0;
+}
+
 .header {
   grid-area: header;
-  background-color: cadetblue;
+  background-color: #fef3c7;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: 1fr 3fr repeat(3 1fr);
+  grid-auto-flow: column;
 }
 
 .main-content {
   grid-area: main-content;
-  background-color: darkgoldenrod;
+  background-color: #0f172a;
 }
