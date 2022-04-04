@@ -74,8 +74,42 @@ li > img {
 
 .header-top {
   display: grid;
-  grid-template-columns: 1fr 3fr repeat(3 1fr);
+  grid-template-columns: 1fr 6fr repeat(3, 1fr);
   grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+  margin: 10px 30px 0 10px;
+}
+
+#search-bar {
+  border-radius: 100px;
+  outline: none;
+  border-width: thin;
+  height: 1.8rem;
+  width: 70%;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+img[data-img-search],
+img[data-img-bell-icon] {
+  justify-self: end;
+}
+
+p[data-profile-name] {
+  justify-self: start;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-bottom {
+  display: flex;
+  /*grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;*/
+  align-items: center;
+  justify-items: center;
+  margin: 10px 30px 0 10px;
 }
 
 .main-content {
