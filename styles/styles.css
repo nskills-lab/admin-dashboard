@@ -1,7 +1,9 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Indie Flower", cursive;
+  font-family: "Indie Flower";
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
@@ -31,16 +33,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   font-size: 2.2rem;
-}
-
-.sidebar-title div {
-  align-content: flex-start;
-  justify-self: start;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .sidebar-title img {
-  align-content: flex-start;
-  justify-self: end;
   margin: 0.2rem;
 }
 
@@ -98,7 +95,7 @@ span[data-tier-pro]{
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
-  background-color: #ffedd5;
+  background-color: #d6d3d1;
 }
 
 img[data-img-search],
@@ -174,22 +171,21 @@ div[data-header-bottom-right] button:hover{
 }
 
 .main-content {
+  max-height: 100%;
   grid-area: main-content;
-  background-color: white;
+  background-color: #fefce8;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
 div[data-content-projects]{
-  background-color: white;
+  max-height: 90%;
   display: flex;
   flex-direction: column;
   margin-bottom: 5%;
 }
 
 div[data-card-container]{
-  background-color: white;
-  flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -200,12 +196,42 @@ div[data-card-container]{
 
 div[data-card]{
   width: 90%;
-  height: 90%;;
-  background-color: blue;
+  max-height: 80%;
+  background-color: #0369a1;
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+  border-radius: 10px;
+
+}
+
+div[data-card-content]{
+  max-height: 80%;
+  background-color: #d6d3d1;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  border-radius: 0 10px 10px 0 ;
+  justify-content: center;
+  align-content: center;
+}
+
+h2[data-content-header]{
+  margin-left: 30px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+p[data-card-title]{
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+div[data-card-icons]{
+  align-self: end;
 
 }
 
 div[data-content-announcements]{
-  background-color: green;;
+  background-color: green;
 }
