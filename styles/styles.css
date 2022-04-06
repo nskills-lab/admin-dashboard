@@ -127,7 +127,7 @@ div[data-header-bottom-left], div[data-header-bottom-right]{
 }
 
 div[data-header-bottom-right]{
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 
