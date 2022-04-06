@@ -104,13 +104,65 @@ p[data-profile-name] {
 }
 
 .header-bottom {
-  display: flex;
-  /*grid-template-columns: repeat(2, 1fr);
-  grid-auto-flow: column;*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
   align-items: center;
-  justify-items: center;
+  justify-items: start;
   margin: 10px 30px 0 10px;
 }
+
+div[data-header-bottom-left], div[data-header-bottom-right]{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+div[data-header-bottom-right]{
+  justify-content: space-around;
+}
+
+
+div[data-header-greeting]{
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+}
+
+p[data-greeting-name]{
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+p[data-greeting]{
+  margin: 20px 0 0 0;
+}
+
+img[data-img-header-bottom]{
+  width: 8%;
+  padding-left: 2rem;
+}
+
+div[data-header-bottom-right] button{
+  width: 110px;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 100px;
+  outline: none;
+  background-color: #9ca3af;
+  font-family: inherit;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+div[data-header-bottom-right] button:hover{
+  box-shadow: 5px 5px 5px #0f172a;
+}
+
 
 .main-content {
   grid-area: main-content;
