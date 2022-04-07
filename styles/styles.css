@@ -239,11 +239,12 @@ div[data-announcements-container]{
 div[data-announcements]{
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  align-items: center;
 }
 
 div[data-announcements] h2{
  margin-bottom: 0;
+
 }
 
 div[data-news]{
@@ -281,9 +282,15 @@ div[data-share]{
   border-bottom: 3px solid #18181b;
 }
 
+div[data-trending-container]{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 div[data-trending]{
   background-color: #fefce8;
-  width: 70%;
+  width: 80%;
   display: grid;
   grid-template-rows: 20px 1f;
   box-shadow: 3px 3px 2px  grey;
