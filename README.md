@@ -6,9 +6,9 @@ Based on [The Odin Project's ](https://www.theodinproject.com/lessons/node-path-
 
 [Check out this live preview](https://nskills-lab.github.io/admin-dashboard/)
 
-<br>
 
-### Acknowledgements
+
+## Acknowledgements
 
 Following icons were downloaded from [Icon8](https://icons8.com/):
 
